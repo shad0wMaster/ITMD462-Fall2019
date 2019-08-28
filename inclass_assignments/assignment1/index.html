@@ -71,6 +71,47 @@ h1{
   text-align: center;
   color:#FFB6C1;
 }
+#container_information{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color:#2F3648;
+}
+#container_information h2{
+  color: white;
+  font-size: 2.0em;
+}
+#container_information p{
+  color: white;
+  font-size: 1.75em;
+}
+#container_information h3{
+  color: white;
+  font-size: 2.0em;
+  }
+#container_information ul{
+  list-style: none;
+  color:#00FFFF;
+  font-size: 1.75em;
+}
+.container_contactus{
+  width: 100%;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+.container_contactus h5{
+  font-size: 1.3em;
+}
+.container_contactus a{
+  text-decoration: none;
+  color: white;
+}
+  .container_contactus a:hover{
+    color:#FF1493;
+    font-weight: 600;
+  }
 </style>
   </head>
   <body>
@@ -91,22 +132,23 @@ h1{
     <main>
     <img class="bulb" id="myImage" onclick="updateImage()" src="images/light_off.gif">
     <h2 id="bulb_title">Press The Bulb To Shine Some Light Into Your Life!</h2>
-    <h2>Amazeriffic will change your life!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    <div id="container_information">
+      <h2>Amazeriffic will change your life!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 			eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <h3>Here's why you need Amazeriffic</h3>
-    <ul>
-      <li>It fits your lifestyle</li>
-      <li>It's awesome</li>
-      <li>It rocks your world</li>
-    </ul>
+      <h3>Here's why you need Amazeriffic!</h3>
+      <ul>
+        <li>1. It Fits Your Lifestyle!</li>
+        <li>2. It's Awesome!</li>
+        <li>3. It Rocks Your World!</li>
+      </ul>
+    </div>
     </main>
     <footer>
-      <div class="contact">
+      <div class="container_contactus">
         <h5>Contact Us</h5>
-        <p>Amazeriffic!</p>
-				<p>Name: <span>Your Name Here</span></p>
-				<p>Name: <span>Your Name Here</span></p>
+        <p><a href="mailto:amazeriffic@outlook.com">Email: amazeriffic@outlook.com</a></p>
+        <p><a href="https://github.com/shad0wMaster/ITMD462-Fall2019/tree/master/inclass_assignments/assignment1">©shad0wMast3r-Designs</a></p>
       </div>
     </footer>
   </body>
