@@ -6,21 +6,80 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Andy's Hobby</title>
+    <title>Andy's Hobbies</title>
 <style>
 body, html{
   font-family:"Bookman",Helvetica,Tahoma,sans-serif;
-  background-color: blue;
+  background-color: #3e4444;
+  font-size: 1.5em;
+  color white;
+}
+#navcontainer ul { 	/*navigation bar*/
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+}
+#navcontainer ul li {
+		display: inline;
+}
+#navcontainer ul li a {
+		text-decoration: none;
+		padding: .2em 1em;
+		color: white;
+		background-color: black;
+}
+#navcontainer ul li a:hover {
+		background-color: #6B5B95;
+		color: yellow;
+}
+#navcontainer a.active {
+		background-color: pink;
+		color: black;
+}
+h1{
+  text-align:center;
+  color: white;
+}
+.float_img{
+  padding: .5em;
+  width: 20%;
+  height: 10%;
+  float: left;
+}
+.float_img_right{
+  padding: .5em;
+  float: right;
+}
+.float_img_right img{
+  width: 20%;
+  height: 10%;
+  float: right;
 }
 </style>
   </head>
   <body>
     <header>
       <nav>
-        <!--Instert Content in here-->
+        <div id="navcontainer">
+          <ul>
+            <li><a class="active" href="index.html">Andy's Hobbies</a></li>
+            <li><a href="https://www.github.com/shad0wMaster">Andy's GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/andykukuc">LinkedIn</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-    <h1>Hello World</h1>
+    <h1>Andy Jakub Kukuc</h1>
+    <div>
+      <img src="images/me.JPG" alt="me" class="float_img"/>
+      <h2>Who Am I?</h2>
+      <p>I am Andy Jakub Kukuc. I am a 4th year Undergraduate Student at Illinois Institute of Technology. I am a double major in Computer Science and Information Technology Management. I have three hobbies and the first one I love working on my car. I have a 2009 Shelby GT 500. I put a lot of time and money into making it a very unique car. Whenever I am not programming or designing UX/UI applications I am in my garage working on "King Cobra". Also I love to wear suits so here is a picture of me in a suit next to my car. No I don't work on my car in a suit HAHAHAHAH.</p>
+    </div>
+    <div class="float_img_right">
+      <h2>Mountain Biking</h2>
+      <img src="images/bike.JPG" alt="bike"/>
+      <p>My second hobby is mountain biking. Ever since I was little I always rode my bike everywhere. As I got my license I completely forgot about riding a bike and started to miss out on the fresh air and the wind blowing through my hair. Over summer I bought a bike from my old Kickboxing Trainer and already put about 200 miles on it. I wake up every day at 5am and ride my bike about 10 miles. I like to stay in shape but after a couple powerlifitng injuries I can't really strength train anymore. That is why one of my top hobbies is mountain biking!</p>
   </body>
 </html>
