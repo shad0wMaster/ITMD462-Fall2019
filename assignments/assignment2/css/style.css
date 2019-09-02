@@ -1,0 +1,86 @@
+body, html{
+  font-family:"Bookman",Helvetica,Tahoma,sans-serif;
+  background-color: #3e4444;
+  font-size: 1.5em;
+  color white;
+}
+#navcontainer ul {      /*navigation bar*/
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                text-align: center;
+}
+#navcontainer ul li {
+                display: inline;
+}
+#navcontainer ul li a {
+                text-decoration: none;
+                padding: .2em 1em;
+                color: white;
+                background-color: black;
+}
+#navcontainer ul li a:hover {
+                background-color: #6B5B95;
+                color: yellow;
+}
+#navcontainer a.active {
+                background-color: pink;
+                color: black;
+}
+h1{
+  text-align:center;
+  color: white;
+}
+.float_img{
+  padding: .5em;
+  width: 25%;
+  height: 5%;
+  float: left;
+}
+.float_img_right{
+  padding: .5em;
+  float: right;
+}
+.float_img_right img{
+  width: 25%;
+  height: 5%;
+  float: right;
+}
+h2{
+  color: #FF69B4;
+}
+p{
+  color:#FFFAFA;
+}
+.float_comp{
+  float: right;
+}
+.float_comp img{
+  width: 25%;
+  height: 5%;
+  float: left;
+  padding: .5em;
+}
+#pc_specs ul{
+  list-style-type: circle;
+  color: #FFFAFA;
+  float: right;
+  width: 100%;
+}
+#pc_specs li{
+  margin-left: 2em;
+}
+.container_contactus{
+  width: 100%;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+.container_contactus a{
+  text-decoration: none;
+  color: white;
+}
+.container_contactus a:hover{
+  color:#FF1493;
+  font-weight: 600;
+}
