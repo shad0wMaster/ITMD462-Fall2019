@@ -54,3 +54,26 @@ h2{
   opacity: 1;
   right: 0;
 }
+footer{
+  color: white;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+footer p {
+  padding-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: #BA27C4;
+  font-weight: 600;
+}
