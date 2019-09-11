@@ -12,3 +12,11 @@ function display_course(){
     i++;
   }
 }
+var andykukuc={
+  firstname: "Andy",
+  lastname: "Kukuc",
+  fullname:function(){
+    return this.firstname+" "+this.lastname;
+  }
+};
+document.getElementById("name").innerHTML=andykukuc.fullname();
