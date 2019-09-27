@@ -5,7 +5,7 @@
 (function(){
   function convert_JSON(form){
     var objects={};
-    var elements=form.querySelectorAll("input","select","textarea");
+    var elements=form.querySelectorAll("input");
     for(var i=0;i<elements.length;i++){
       var element=elements[i];
       var name=elements.name=element.name;
@@ -22,7 +22,9 @@
     form.addEventListener("submit",function(e){
       e.preventDefault();
       var json=convert_JSON(this);
-      output.innerHTML=json;
+      output.innerHTML+=json+'<br>';
+      document.querySelector('#box1').value='';
+      document.querySelector('#box2').value='';
     },false);
   });
 })();
