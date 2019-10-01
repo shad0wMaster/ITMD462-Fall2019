@@ -23,8 +23,10 @@
       e.preventDefault();
       var json=convert_JSON(this);
       output.innerHTML+=json+'<br>';
-      document.querySelector('#box1').value='';
-      document.querySelector('#box2').value='';
+      //var boxes=["#boxclass","box2","#box3","box4"]
+      document.querySelector('#box_class').value='';
+      //document.querySelector('#box2').value='';
+      //document.querySelector('#box3').value='';
     },false);
   });
 })();
