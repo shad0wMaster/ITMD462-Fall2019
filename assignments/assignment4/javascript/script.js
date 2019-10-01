@@ -22,11 +22,10 @@
     form.addEventListener("submit",function(e){
       e.preventDefault();
       var json=convert_JSON(this);
-      output.innerHTML+=json+'<br>';
-      //var boxes=["#boxclass","box2","#box3","box4"]
-      document.querySelector('#box_class').value='';
-      //document.querySelector('#box2').value='';
-      //document.querySelector('#box3').value='';
+      output.innerHTML+='<p style="text-align:center;color:#FFFFF0;width:100%;">'+json+'<br>';
+      document.querySelector('#box1').value='';
+      document.querySelector('#box2').value='';
+      document.querySelector('#box3').value='';
     },false);
   });
 })();

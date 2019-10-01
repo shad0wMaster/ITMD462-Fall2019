@@ -11,22 +11,23 @@
     <script typ="text/javascript" src="javascript/script.js"></script>
   </head>
   <body id="home">
-    <h1>Hello Please Fill Out The Required Fields.</h1>
-    <form name="andys_form" id="test" action="#" method="post">
-      <label>First Name:<br></label>
-      <div id="box_class">
-        <input type="text" name="firstname" required placeholder="Andy"> 
-        <br>
-        <label>Last Name:<br></label>
-        <input type="text" name="lastname" placeholder="Kukuc" required/><!--id="box2"-->
-        <label><br>Enter Your Favorite Number:<br></label>
-        <input type="number" name="fav_number" placeholder="420" step="0.1" required id="box3"><br>
-      </div>
-      <input type="submit" value="Submit" id="box4"/>
-    </form>
-    <pre id="output"></pre>
-    <footer id="footer">
-      <p><a href="https://github.com/shad0wMaster/ITMD462-Fall2019/tree/master/assignments/assignment3/">©shad0wMast3r-Designs</a></p>
-    </footer>
+    <div id="container">
+      <h1>Hello Please Fill Out The Required Fields.</h1>
+      <form name="andys_form" id="test" action="#" method="post">
+        <label>First Name:<br></label>
+        <div id="box_class">
+          <input type="text" name="firstname" required placeholder="Andy" id="box1"/><br>
+          <label>Last Name:<br></label>
+          <input id="box2" type="text" name="lastname" placeholder="Kukuc" required id="box2"/><!--id="box2"-->
+          <label><br>Enter Your Favorite Number:<br></label>
+          <input type="number" name="fav_number" placeholder="420" step="0.1" required id="box3"/><br><!--id="box3"-->
+        </div>
+        <button type="submit" class="button" value="Submit"><span>Submit</span></button><!--id="box4"-->
+      </form>
+      <pre id="output"></pre>
+      <footer id="footer">
+        <p><a href="https://github.com/shad0wMaster/">©shad0wMast3r</a></p>
+      </footer>
+    </div>
   </body>
 </html>
