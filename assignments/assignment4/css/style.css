@@ -8,8 +8,8 @@ html,body{
 }
 pre{
   color:#FFFFF0;
-  font-size:1.53em;
-
+  font-size:2.5em;
+  text-align:center;
 }
 input{
   text-align: center;
@@ -20,6 +20,13 @@ input{
 }
 #box_class input{
   margin-bottom:5px;
+  display:inline-block;
+  width:40%;
+  padding: 1%;
+  font-size: 2em;
+}
+label{
+  font-size:1.5em;
 }
 footer a {
   text-decoration: none;
@@ -29,4 +36,53 @@ footer a {
 footer a:hover {
   color: #BA27C4;
   font-weight: 600;
+}
+#container {
+  height:60%;
+  width:50%;
+  max-width:100%;
+  text-align:center;
+  position:absolute;
+  left:25%;
+  margin-left: 50px;
+}
+.button {
+  text-align:center;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FF8396;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5em;
+  width: 15%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
