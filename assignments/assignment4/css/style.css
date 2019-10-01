@@ -8,4 +8,25 @@ html,body{
 }
 pre{
   color:#FFFFF0;
+  font-size:1.53em;
+
+}
+input{
+  text-align: center;
+  margin-top: 5px;
+}
+#box4{
+  margin-top:10px;
+}
+#box_class input{
+  margin-bottom:5px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: #BA27C4;
+  font-weight: 600;
 }
