@@ -1,4 +1,4 @@
-dy Kukuc
+/*Andy Kukuc
  * Professor Charles Beck
  * ITMD-462-01
  * 23rd Oct. 2019*/
@@ -7,6 +7,7 @@ dy Kukuc
     var objects={}; // declare variable objects and object
     //grabs all input elements from the html form and store it in variable elements as a nodelist. Metadata is stored in 3 nodes, one for each input field
     var elements=form.querySelectorAll("input");
+    //console.log(elements);
     //a loop will traverse the nodelist in elements, grap the usefull metadata (name and value) to create an object.
     //The 3 nodes will become the field variables for the object, using name as the variable name and value as the data being stored to it.
     for(var i=0;i<elements.length;i++){
