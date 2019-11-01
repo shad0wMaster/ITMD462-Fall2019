@@ -4,14 +4,14 @@
  * 10-31-2019
  */
 //orders.js file figuring it out
-const express=requrie('express');
+const express=require('express');
 const router=express.Router();
 router.get('/',(req,res,next)=>{
   res.status(200).json({
-    message: 'Orders were fetched';
+    message: 'Orders were fetched'
   });
 });
-rotuer.post('/'(req,res,next)=>{
+router.post('/',(req,res,next)=>{
   res.status(200).json({
     message:'Order was created'
   });
