@@ -22,8 +22,8 @@ router.post('/',(req,res,next)=>{
 //users id is set here here its all written for the get request
 router.get('/:usersID',(req,res,next)=>{
   var array1=['andy','iit','dog'];
-  var id=req.params.usersID;
-   if(id==array1[0]||id===array1[1]||id===array1[2]){
+  const id=req.params.usersID;
+   if(array1.indexOf(id)>-1){
     res.status(200).json({
       message:'You discovered a secret userID using Get!'
     });
