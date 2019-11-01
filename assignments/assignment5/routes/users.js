@@ -60,4 +60,18 @@ router.patch('/:usersID',(req,res,next)=>{
     });
   };
 });
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*usersID set to delete*/
+router.delete('/:usersID',(req,res,next)=>{
+  const id=req.params.usersID;
+  if(id==='delete'){
+    res.status(200).json({
+      message:'Specific usersID passed using DELETE!',id:id
+    });
+  }else{
+    res.status(203).json({
+      message:'Normal usersID passed using DELETE!',id:id
+    });
+  };
+});
 module.exports=router;
