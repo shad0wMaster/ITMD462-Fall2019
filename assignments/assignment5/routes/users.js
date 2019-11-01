@@ -21,14 +21,15 @@ router.post('/',(req,res,next)=>{
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //users id is set here here its all written for the get request
 router.get('/:usersID',(req,res,next)=>{
-  const id=req.params.usersID;
-  if(id==='andy'){
+  var array1=['andy','iit','dog'];
+  var id=req.params.usersID;
+   if(id==array1[0]||id===array1[1]||id===array1[2]){
     res.status(200).json({
-      message:'You discovered userID Andy using Get!',id:id
+      message:'You discovered a secret userID using Get!'
     });
   }else{
-    res.status(200).json({
-      message:'Normal ID Has Been Passed Using Get!',id:id
+    res.status(201).json({
+      message:'Normal ID Has Been Passed Using Get!'
     });
   };
 });
