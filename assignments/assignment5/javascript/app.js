@@ -8,7 +8,7 @@ const app=express();
 const morgan=require('morgan');
 const productRoutes=require('../routes/products.js');
 const orderRoutes=require('../routes/orders.js');
-const userRoutes=require('../routes/users.js')
+const userRoutes=require('../routes/users.js');
 app.use(morgan('dev'));
 // Routes which should handle requests
 app.use('/products',productRoutes);
