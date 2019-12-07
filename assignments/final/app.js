@@ -11,8 +11,16 @@ var mongoose = require('mongoose');
 
 var app = express();
 
-//mongoose.connect('mongodb+srv://andy_sa_account:5Y3FADcat5AqyvOM@cluster0-kdf9e.azure.mongodb.net/test?retryWrites=true&w=majority')
-mongoose.connect('mongodb+srv://vinc:RorxCC2neSSiz8Gc@cluster0-kdf9e.azure.mongodb.net/test?retryWrites=true&w=majority')
+var mongoose=require('mongoose');
+mongoose.connect('mongodb+srv://andy_sa_account:' + process.env.MONGO_ATLAS_PW +
+    '@cluster0-kdf9e.azure.mongodb.net/test?retryWrites=true&w=majority',
+    {
+        useUnifiedTopology: true,
+        useNewUrlParser: true
+    }
+);
+
+/*mongoose.connect('mongodb+srv://andy_sa_account:5Y3FADcat5AqyvOM@cluster0-kdf9e.azure.mongodb.net/test?retryWrites=true&w=majority')
 //mongoose.connect('mongodb://localhost:27017/lol')
     .then(() => {
         console.log('Database connected');
@@ -20,7 +28,7 @@ mongoose.connect('mongodb+srv://vinc:RorxCC2neSSiz8Gc@cluster0-kdf9e.azure.mongo
     .catch((error) => {
         console.log('Error connecting to database');
         console.log(error);
-    });
+    });*/
 // view engine setup
 app.set('trust proxy', 1);
 app.use(require('express-session')({
