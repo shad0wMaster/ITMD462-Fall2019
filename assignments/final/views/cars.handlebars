@@ -1,0 +1,63 @@
+<div class="container">
+    {{#if hasAlert}}
+        <div class="alert">
+            {{alert}}
+        </div>
+    {{/if}}
+    <h2>Your Car Inventory</h2>
+    <table id="carTable">
+        <thead>
+        <tr>
+            <th class="car_id">ID</th>
+            <th class="year">Year</th>
+            <th class="make">Make</th>
+            <th class="model">Model</th>
+            <th class="color">Color</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each cars}}
+            <tr>
+                <td class="car_id">{{_id}}</td>
+                <td class="year">{{year}}</td>
+                <td class="make">{{make}}</td>
+                <td class="model">{{model}}</td>
+                <td class="color">{{color}}</td>
+                <td class="button">
+                    <button onclick="window.location.href= '/cars/{{_id}}';" id="btnEdit" type="submit">Edit</button>
+                </td>
+                <td class="button">
+                    <form method="post" action="/api/cars/delete">
+                        <input type="hidden" name="id" value="{{_id}}"/>
+                        <button id="btnDelete">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+    <h2>Create New Car</h2>
+    <form method="post" action="/api/cars">
+        <label for="year">
+            Year: <input type="text" name="year" placeholder="Year"/>
+        </label>
+        <label for="make">
+            Make: <input type="text" name="make" placeholder="Make"/>
+        </label>
+        <label for="model">
+            Model: <input type="text" name="model" placeholder="Model"/>
+        </label>
+        <label for="color">
+            Color: <input type="text" name="color" placeholder="Color"/>
+        </label>
+        <button type="submit">New Car</button>
+    </form>
+</div>
+
+{{#section 'script'}}
+    <script src="/javascripts/client.js" type="text/javascript"></script>
+    <script src="/javascripts/car_view.js" type="text/javascript"></script>
+{{/section}}

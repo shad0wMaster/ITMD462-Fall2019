@@ -1,0 +1,20 @@
+<div class="container">
+    {{#car}}
+        <form method="post" action="/api/cars/update">
+            <input type="hidden" name="id" value="{{_id}}"/>
+            <label for="year">
+                Year: <input type="text" name="year" placeholder="Year" value="{{year}}"/>
+            </label>
+            <label for="make">
+                Make: <input type="text" name="make" placeholder="Make" value="{{make}}"/>
+            </label>
+            <label for="model">
+                Model: <input type="text" name="model" placeholder="Model" value="{{model}}"/>
+            </label>
+            <label for="color">
+                Color: <input type="text" name="color" placeholder="Color" value="{{color}}"/>
+            </label>
+            <button type="submit">Update</button>
+        </form>
+    {{/car}}
+</div>

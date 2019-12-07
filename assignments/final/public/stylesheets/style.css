@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+}
+
+div.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+a {
+    color: #00B7FF;
+}
+
+#carTable {
+    min-width: 64em;
+}
+
+#carTable td, #carTable th {
+    border: 1px solid black;
+}
+
+#carTable .car_id {
+    width: 12em;
+}
+
+#carTable .make {
+
+}
+
+#carTable .model {
+
+}
+
+#carTable .year {
+    width: 4em;
+}
+
+#carTable .color {
+
+}
+
+#carTable .button {
+    width: 4em;
+}
+
+#carTable .button button {
+    width: 100%;
+}
+
+h2 {
+    font-size: 18pt;
+    padding-top: 0.25em;
+    padding-bottom: 0.75em;
+}
