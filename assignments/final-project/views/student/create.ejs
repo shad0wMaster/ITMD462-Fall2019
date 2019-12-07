@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Student</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/students">Student List</a></h3>
+      <h1>Create New Student</h1>
+      <form action="/students/save" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+              <td>ID Number</td>
+              <td><textarea name="ID_Number"></textarea></td>
+            </tr>
+            <tr>
+              <td>Current Year In School</td>
+              <td><input type="text" name="Current_Year_In_School"/></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" value="Save" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
