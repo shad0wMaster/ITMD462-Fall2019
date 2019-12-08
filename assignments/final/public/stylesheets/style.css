@@ -1,5 +1,14 @@
+div.alert{
+  text-align:center;
+  background-color:yellow;
+  width:10%;
+  margin-right:auto;
+  margin-left:auto;
+  font-weight:bold;
+}
 body {
     font-family: sans-serif;
+    background-color:
 }
 
 div.container {
